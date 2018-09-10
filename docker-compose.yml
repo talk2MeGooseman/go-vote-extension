@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  go-vote:
+    image: go-vote
+    build: .
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./:/myapp
+    ports:
+      - 8080:8080
+    command: npm run start
