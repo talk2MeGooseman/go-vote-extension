@@ -56,10 +56,13 @@ h1, h2 {
 .details {
     width: 100vw;
     height: 100vh;
-    background: #0039cb;
+    background: url(./image.jpg);
     font-size: 91px;
     font-weight: bold;
     transition: 300ms transform;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
 
     h1, h2 {
         font-size: 91px;
@@ -89,11 +92,8 @@ h1, h2 {
 }
 
 .group {
-    padding: 0 0 30px 0;
-    &:nth-child(odd) {
-        background: #ffffff;
-        color: #0039cb;
-    }
+    grid-row: 2;
+    color: #0039cb;
 }
 
 .cta, .details {

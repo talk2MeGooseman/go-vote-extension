@@ -1,10 +1,15 @@
 import moment from 'moment';
 import { getSettings, setSettings } from "./Ebs";
+import isToday from 'date-fns/is_today'
+import isBefore from 'date-fns/is_before'
+import distanceInWordsToNow from 'date-fns/distance_in_words_to_now'
 import './styles.scss';
 
 const ELECTION_DAY = "2018-11-6";
 
-const day = moment(ELECTION_DAY);
+const electionDate = new Date(ELECTION_DAY);
+const isElectionDay = isToday(electionDate);
+const isBeforeElection = isBefore(new Date(), electionDate);
 
 window.onload = function() {
   let twitchAuth, settings;
@@ -56,27 +61,27 @@ window.onload = function() {
 
   // video_component settings
   if (ctaEl) {
-    countDownEl.innerHTML = moment().to(day, true);
     ctaEl.classList.add('slide-in');
 
-    let electionHappened = moment().isSameOrAfter(ELECTION_DAY);
-
-    if (electionHappened)
+    if (isElectionDay)
     {
-      ctaEl.classList.remove('show');
-      detailsEl.classList.remove('show')
-      thanksEl.classList.add('show');
+      countDownEl.innerHTML = "Elections Are Today, Nov. 6th 2018";
+    } else if (isBeforeElection)
+    {
+      countDownEl.innerHTML = distanceInWordsToNow(electionDate) + " until Nov. 6th 2018 elections";
     } else
     {
-      ctaEl.addEventListener('click', (e) => {
-        e.target.classList.remove('slide-in');
-        detailsEl.classList.add('slide-in');
-      });
-
-      closeDetailsEl.addEventListener('click', (e) => {
-        ctaEl.classList.add('slide-in');
-        detailsEl.classList.remove('slide-in');
-      });
+      countDownEl.innerHTML = "Thanks for Voting!!";
     }
+
+    ctaEl.addEventListener("click", e => {
+      e.target.classList.remove("slide-in");
+      detailsEl.classList.add("slide-in");
+    });
+
+    closeDetailsEl.addEventListener("click", e => {
+      ctaEl.classList.add("slide-in");
+      detailsEl.classList.remove("slide-in");
+    });
   }
 };
