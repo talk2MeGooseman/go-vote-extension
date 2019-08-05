@@ -56,7 +56,10 @@ h1, h2 {
 .details {
     width: 100vw;
     height: 100vh;
+    background-color: #0039cb;
     background: url(./image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     font-size: 91px;
     font-weight: bold;
     transition: 300ms transform;
