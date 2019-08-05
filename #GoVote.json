@@ -1,0 +1,179 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://video-edge-ad7048.sjc02.hls.ttvnw.net"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://api.twitch.tv"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://gql.twitch.tv"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://adservice.google.com"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://pubsub-edge.twitch.tv"
+    }
+  ],
+  "extensionViews": [
+    {
+      "id": "2",
+      "label": "",
+      "channelId": "120750024",
+      "configurationAnchor": "panel",
+      "displayChannelName": "talk2megooseman",
+      "type": "panel",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": false,
+      "linkedUserId": "",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "3",
+      "label": "",
+      "channelId": "120750024",
+      "configurationAnchor": "panel",
+      "displayChannelName": "talk2megooseman",
+      "type": "component",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": false,
+      "linkedUserId": "",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Broadcaster",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "talk2megooseman",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election. Position the small #GoVote tab on the left edge, right edge or anywhere else over your stream. And when your viewers click on it it will display: election date, how long till the election.\r\nIf care about voting and when to remind your viewers to do it, then this is the extension for you.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/icon/170/442/636721969475096247.jpeg",
+    "iconUrls": {
+      "100x100": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/icon/170/442/636721969475096247.jpeg",
+      "24x24": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/taskbar-icon/170/449/636721974783440189.jpeg",
+      "300x200": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/discovery-icon/170/443/636721969476814878.jpeg"
+    },
+    "id": "ki2i1grik044gbngcldrahcpprxqg0",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "#GoVote",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/screenshots/236/922/govotetab.png",
+      "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.0/5b84c05ed27a3c99d8f7cd92ec917f82/internal/screenshots/238/7/screenshot_2018-10-02twitch.png"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election",
+    "supportEmail": "help@gooseman.codes",
+    "vendorCode": "",
+    "version": "2020.0",
+    "viewerSummary": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election",
+    "viewerUrl": "https://localhost:8080/video_component.html",
+    "viewerUrls": {
+      "panel": "https://localhost:8080/video_component.html",
+      "component": "https://localhost:8080/video_component.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "height": 300,
+        "canLinkExternalContent": true
+      },
+      "component": {
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "aspectWidth": 2500,
+        "aspectHeight": 3800,
+        "aspectRatioX": 40000,
+        "aspectRatioY": 34200,
+        "autoscale": true,
+        "scalePixels": 1024,
+        "targetHeight": 5066,
+        "size": 0,
+        "zoom": true,
+        "zoomPixels": 1024,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": true
+      }
+    },
+    "whitelistedConfigUrls": [
+      "https://www.twitch.tv/*"
+    ],
+    "whitelistedPanelUrls": [
+      "https://vote.gov"
+    ]
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "",
+  "name": "#GoVote",
+  "version": 1
+}
