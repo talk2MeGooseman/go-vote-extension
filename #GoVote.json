@@ -1,0 +1,147 @@
+{
+  "allowHttpBackend": true,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": false,
+      "value": "wss://localhost:8080/sockjs-node/066/0vyaeujx/websocket"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://localhost:8080"
+    }
+  ],
+  "extensionViews": [
+    {
+      "channelId": "120750024",
+      "configurationAnchor": "panel",
+      "displayChannelName": "talk2megooseman",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "panel",
+      "viewerType": "Broadcaster"
+    },
+    {
+      "channelId": "120750024",
+      "configurationAnchor": "panel",
+      "displayChannelName": "talk2megooseman",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "2",
+      "isPopout": false,
+      "label": "",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "component",
+      "viewerType": "Broadcaster"
+    }
+  ],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "talk2megooseman",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "custom",
+    "description": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election. Position the small #GoVote tab on the left edge, right edge or anywhere else over your stream. And when your viewers click on it it will display: election date, how long till the election.\r\nIf care about voting and when to remind your viewers to do it, then this is the extension for you.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/icon/170/442/636721969475096247.jpeg",
+    "iconUrls": {
+      "100x100": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/icon/170/442/636721969475096247.jpeg",
+      "24x24": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/taskbar-icon/170/449/636721974783440189.jpeg",
+      "300x200": "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/discovery-icon/170/443/636721969476814878.jpeg"
+    },
+    "id": "ki2i1grik044gbngcldrahcpprxqg0",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "#GoVote",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/screenshots/236/922/govotetab.png",
+      "https://ki2i1grik044gbngcldrahcpprxqg0.ext-twitch.tv/ki2i1grik044gbngcldrahcpprxqg0/2020.1/4ea3eed715d6289b94b37295912af147/internal/screenshots/238/7/screenshot_2018-10-02twitch.png"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election",
+    "supportEmail": "help@gooseman.codes",
+    "vendorCode": "",
+    "version": "2020.1",
+    "viewerSummary": "A simple non-partisan extension to encourage your viewers to go vote in the upcoming United States election",
+    "viewerUrl": "https://localhost:8080/video_component.html",
+    "viewerUrls": {
+      "panel": "https://localhost:8080/video_component.html",
+      "component": "https://localhost:8080/video_component.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "height": 300,
+        "canLinkExternalContent": false
+      },
+      "component": {
+        "viewerUrl": "https://localhost:8080/video_component.html",
+        "aspectWidth": 0,
+        "aspectHeight": 0,
+        "aspectRatioX": 40000,
+        "aspectRatioY": 34200,
+        "scalePixels": 1024,
+        "targetHeight": 5066,
+        "size": 0,
+        "zoom": false,
+        "zoomPixels": 0,
+        "canLinkExternalContent": false,
+        "autoScale": true
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": true
+      }
+    },
+    "whitelistedConfigUrls": [
+      "https://www.twitch.tv/*"
+    ],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "",
+  "name": "#GoVote",
+  "version": 2
+}

@@ -1,81 +1,86 @@
- @font-face {
-   font-family: 'Raleway';
-   src:  url('./Raleway-Regular.ttf') format('ttf'),
-         url('./Raleway-Bold.ttf') format('ttf');
-   font-style: normal;
- }
-
-
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    // cursor: pointer;
+@font-face {
+  font-family: 'Raleway';
+  src: url('./Raleway-Regular.ttf') format('ttf'),
+    url('./Raleway-Bold.ttf') format('ttf');
+  font-style: normal;
 }
 
-h1, h2 {
-    margin: 0;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  // cursor: pointer;
+}
+
+h1,
+h2 {
+  margin: 0;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .details {
-    width: 100vw;
-    height: 100vh;
-    background-color: #0039cb;
-    background: url(./image.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-color: #0039cb;
+  background: url(./image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 9vw;
+  font-weight: bold;
+  transition: 300ms transform;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+
+  h1,
+  h2 {
     font-size: 91px;
-    font-weight: bold;
-    transition: 300ms transform;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
+  }
 
-    h1, h2 {
-        font-size: 91px;
+  .close {
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    background: #d60000;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 8vh;
+    border-radius: 5px;
+
+    &:before {
+      content: 'X';
     }
-
-    .close {
-        cursor: pointer;
-        width: 10%;
-        height: 10%;
-        position: fixed;
-        top: 4px;
-        right: 4px;
-        background: #d60000;
-        text-align: center;
-        line-height: 10vh;
-        font-size: 8vh;
-        border-radius: 5px;
-
-        &:before {
-            content: 'X';
-        }
-    }
+  }
 }
 
 .link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .group {
-    grid-row: 2;
-    color: #0039cb;
+  grid-row: 2;
+  color: #0039cb;
 }
 
-.cta, .details {
-    --pos: 1;
-    position: absolute;
+.cta,
+.details {
+  --pos: 1;
+  position: absolute;
 }
 
 .thanks {
-    width: 100vw;
-    height: 100vh;
-    background: #0039cb;
-    font-size: 80px;
-    display: none;
+  width: 100vw;
+  height: 100vh;
+  background: #0039cb;
+  font-size: 80px;
+  display: none;
 }
