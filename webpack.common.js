@@ -36,6 +36,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: '#GoVote',
+      filename: 'panel.html',
+      inject: true,
+      template: 'src/panel.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: '#GoVote',
       filename: 'config.html',
       inject: true,
       template: 'src/config.html'
